@@ -4,7 +4,9 @@
 # Interpreter version: python 2.7
 #
 # Imports =====================================================================
+from setuptools import find_packages
 from distutils.core import setup
+
 
 # Variables ===================================================================
 changelog = open('CHANGES.rst').read()
@@ -56,7 +58,8 @@ setup(
     ],
     license='MIT',
 
-    packages=["src/remove_hairs"],
+    packages=find_packages('src'),
+    package_dir={'': 'src'},
     include_package_data=True,
     zip_safe=True,
 
