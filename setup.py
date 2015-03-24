@@ -4,7 +4,7 @@
 # Interpreter version: python 2.7
 #
 # Imports =====================================================================
-from setuptools import setup, find_packages
+from distutils.core import setup
 
 from docs import getVersion
 
@@ -33,10 +33,15 @@ setup(
         "Programming Language :: Python :: 2",
         'Programming Language :: Python :: 2.7',
         "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "Topic :: Software Development",
+        "Topic :: Text Processing",
     ],
     license='MIT',
 
-    packages=find_packages('src'),
+    packages=["src/remove_hairs"],
     include_package_data=True,
     zip_safe=True,
 
