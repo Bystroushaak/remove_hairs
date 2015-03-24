@@ -17,7 +17,7 @@ from remove_hairs import remove_hairs_decorator
 def test_remove_hairs():
     assert remove_hairs(",a-sd,-/") == "a-sd"
 
-    assert remove_hairs(" - a sd. --", " -") == "a sd."
+    assert remove_hairs(" - a sd: --", " -") == "a sd:"
 
     assert remove_hairs(" -  --", " -") == ""
 
@@ -43,12 +43,12 @@ def test_remove_hairs_decorator():
 
     @remove_hairs_decorator(hairs=" -")
     def y():
-        return " - a sd. --"
+        return " - a sd: --"
 
-    assert y() == "a sd."
+    assert y() == "a sd:"
 
     @remove_hairs_decorator(hairs=" -")
     def y(a):
-        return " - a sd. --"
+        return " - a sd: --"
 
-    assert y(1) == "a sd."
+    assert y(1) == "a sd:"
