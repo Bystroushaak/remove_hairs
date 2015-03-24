@@ -45,7 +45,7 @@ def remove_hairs_decorator(fn=None, hairs=HAIRS):
     def decorator_wrapper(fn):
         @wraps(fn)
         def decorator(*args, **kwargs):
-            out = fn()
+            out = fn(*args, **kwargs)
 
             return remove_hairs(out, hairs)
 
@@ -54,4 +54,4 @@ def remove_hairs_decorator(fn=None, hairs=HAIRS):
     if fn:
         return decorator_wrapper(fn)
 
-    return fn
+    return decorator_wrapper
