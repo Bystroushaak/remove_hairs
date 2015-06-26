@@ -9,8 +9,8 @@ remove_hairs
 
 .. image:: https://img.shields.io/pypi/l/remove_hairs.svg
 
-.. image:: https://img.shields.io/github/issues/edeposit/remove_hairs.svg
-    :target: https://github.com/edeposit/remove_hairs/issues
+.. image:: https://img.shields.io/github/issues/Bystroushaak/remove_hairs.svg
+    :target: https://github.com/Bystroushaak/remove_hairs/issues
 
 
 Function form removing characters from both sides of string.
