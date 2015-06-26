@@ -2,10 +2,15 @@ remove_hairs
 ===============================
 
 .. image:: https://badge.fury.io/py/remove_hairs.png
-    :target: http://badge.fury.io/py/remove_hairs
+    :target: https://pypi.python.org/pypi/remove_hairs
 
-.. image:: https://pypip.in/d/remove_hairs/badge.png
-        :target: https://pypi.python.org/pypi/remove_hairs
+.. image:: https://img.shields.io/pypi/dm/remove_hairs.svg
+    :target: https://pypi.python.org/pypi/remove_hairs
+
+.. image:: https://img.shields.io/pypi/l/remove_hairs.svg
+
+.. image:: https://img.shields.io/github/issues/edeposit/remove_hairs.svg
+    :target: https://github.com/edeposit/remove_hairs/issues
 
 
 Function form removing characters from both sides of string.
