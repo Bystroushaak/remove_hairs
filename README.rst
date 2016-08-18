@@ -13,7 +13,7 @@ remove_hairs
     :target: https://github.com/Bystroushaak/remove_hairs/issues
 
 
-Function form removing characters from both sides of string.
+Function for trimming characters on both sides of string.
 
 Documentation
 -------------
